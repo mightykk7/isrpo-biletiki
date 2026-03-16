@@ -1,44 +1,50 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 main{
     width: 100%;
     height: 100vh;
+    background-color: #212121;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
-.coin{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    transition: 1s;
+.container{
+    width: 50%;
+    height: 60%;
+    overflow: hidden;
 }
-.coin_back,.coin_front{
-    position: absolute;
+.carousel{
     width: 100%;
     height: 100%;
-    border: orange solid 5px;
-    background-color: rgb(179, 185, 2);
-    color: rgb(138, 138, 0);
+    text-wrap: nowrap;
+    transition: 1s;
+    animation: animation 5s infinite ease-in-out
+}
+.left_btn,
+.right_btn{
+    cursor: pointer;
+    background-color: white;
+    width:70px;
+    height:70px;
+    border: none;
+    font-size: 3em;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    font-weight: 900;
 }
-.coin_front{
-    z-index: 1;
+.carousel img {
+    width: 100%;
+    height: 100%;
 }
-.coin_btn{
-    width: 125px;
-    color: white;
-    height: 50px;
-    background-color: blue;
-    border-radius: 20%;
-    border: rgb(195, 255, 0) solid 1px;
+@keyframes animation{
+    0%, 20%, 100%{
+        transform:translateX(0);
+    }
+    30%, 50%{
+        transform:translateX(-100%);
+    }
+    60%, 80%{
+        transform:translateX(-201%);
+    }
 }
