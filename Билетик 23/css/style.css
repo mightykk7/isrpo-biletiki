@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    
+    transition: 1s;
+}
+main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 35px 5% ;
+    box-sizing: border-box;
+    background-image: url(../img/back.png), linear-gradient(-45deg, #ff0099, #000477); 
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+a:hover,button:hover{
+    opacity: 0.5;
+}
+.up,.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 2em;
+    font-weight: 900;
+}
+.menu_nav,.menu_link{
+    display: flex;
+    gap: 20px;
+}
+.menu_nav a{
+    font-size: 2em;
+}
+.menu_link img{
+    width: 50px;
+    filter: hue-rotate(180deg) invert(1);
+}
+.content_slogan{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid #fff;
+}
+.content_text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 20px;
+}
+.content_slogan::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.content_title{
+    font-size: 3em;
+}
+.content_desc{
+    font-size: 2em;
+}
+.content_form{
+    background-color: #fff;
+    width: 40%;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    z-index: 2;
+}
+.form_title{
+    font-size: 2em;
+    color: black;
+}
+span{
+    color: grey;
+}
+.form_content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 25px;
+}
+.form_item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.form_item input{
+    color: black;
+    font-size: 1.5em;
+    padding: 20px 10px;
+    border: none;
+    border-bottom: #afafaf solid 2px;
+    border-radius: 10px;
+}
+.form_item input:focus{
+    outline: none;
+    border-bottom: black solid 2px;
+}
+.form_btn{
+    background-color: #ff0099;
+    border: none;
+    padding: 10px 10px;
+    font-size: 2em;
+    padding: 10px 20px;
+    border-radius: 50px 50px 15px 50px;
+}
+.urist{
+    width: 400px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 26%;
+    box-shadow: #fff 100px;
+}
+.lang{
+    position: absolute;
+    z-index: 1;
+
+}
+button{
+    border: none;
+    background: none;
+    bottom: 0%;
+    right: 0%;
+}
