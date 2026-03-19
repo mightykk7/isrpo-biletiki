@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Билетик 8</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="content">
+            <h1 class="content_title">Конвертер валют</h1>
+            <input type="number" id="from" value="1" min="1">
+            <select id="from_value">
+                <option value="n" disabled selected hidden> Выберите параметр</option>
+                <option value="m">Метр</option>
+                <option value="in">Дюйм</option>
+                <option value="ft">Фут</option>
+                <option value="yd">Ярд</option>
+                <option value="mi">Миля</option>
+            </select>
+            <select id="to_value">
+                <option value="n" disabled selected hidden> Выберите параметр</option>
+                <option value="m">Метр</option>
+                <option value="in">Дюйм</option>
+                <option value="ft">Фут</option>
+                <option value="yd">Ярд</option>
+                <option value="mi">Миля</option>
+            </select>
+            <button class="btn">Рассчитать</button>
+            <p class="result"></p>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
