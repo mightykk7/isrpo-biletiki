@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+}
+main{
+    background-color: azure;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.btn{
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.btn:hover{
+    opacity: 0.7;
+    scale: 1.1;
+}
+span{
+    font-size: 25px;
+}
+.game_container{
+    box-shadow: 0 0 5px black;
+    text-align: center;
+    width: 350px;
+    height: 75px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: 10px;
+}
