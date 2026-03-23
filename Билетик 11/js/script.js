@@ -39,26 +39,32 @@ btn.forEach(item =>{
         }
         console.log(countC,countP);
         if (countP >= 3){
+            btn.forEach(item =>{
+                item.disabled = true;
+            })
+
             setTimeout(()=>{
             result.innerHTML =`
                             <p>Вы выиграли!!! Победил игрок</p>`;
                         btncontainer.innerHTML =``;
-        },250)
+        },2000)
             setTimeout(()=>{
             window.location.reload();
-        },2000)
-        return;
+        },5000)
         }
         if (countC >= 3){
+            btn.forEach(item =>{
+                item.disabled = true;
+            })
+
             setTimeout(()=>{
             result.innerHTML =`
                 <p>Вы проиграли!!! Победил компьютер</p>`;
             btncontainer.innerHTML =``;    
-        },250)
+        },2000)
             setTimeout(()=>{
             window.location.reload();
-        },2000)
-            return;
+        },5000)
         } 
     })
     
