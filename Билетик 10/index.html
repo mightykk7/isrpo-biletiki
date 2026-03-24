@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Билетик 10</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="res">
+                <p class="result"></p>
+            </div>
+            <div class="item">
+                <label for="length">Длина: <span class="length">16</span></label>
+                <input type="range" name="range" id="range" min="0" max="32" step="1">
+            </div>
+            <div class="item">
+                <p>Верхний регистр</p>
+                <label for="upper" class="switch">
+                    <input type="checkbox"  name="upper" id="upper">
+                    <span class="switch round"></span>
+                </label>
+            </div>
+            <div class="item">
+                <p>Нижний регистр</p>
+                <label for="lower" class="switch">
+                    <input type="checkbox" class="switch" name="lower" id="lower">
+                <span class="switch round"></span>
+                </label>
+            </div>
+            <div class="item">
+                <p>Цифры</p>
+                <label for="digital" class="switch">
+                    <input type="checkbox" class="switch" name="digital" id="digital">
+                <span class="switch round"></span>
+                </label>
+            </div>
+            <div class="item">
+                <p>Символы</p>
+                <label for="special" class="switch">
+                    <input type="checkbox" class="switch" name="special" id="special">
+                    <span class="switch round"></span>
+                </label>
+            </div>
+            <button class="btn">Сгенерировать</button>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
