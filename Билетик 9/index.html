@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Генератор никнеймов</title>
+</head>
+<body>
+    <main>
+        <div class="generate">
+            <input type="text"id="result" readonly>
+            <input type="text" id="firstname" placeholder="Фамилия">
+            <input type="text"id="lastname" placeholder="Имя">
+            <select name="" id="hobby">
+                <option value="n" selected disabled>Хобби</option>
+                <option value="👟">Спорт</option>
+                <option value="🎵">Музыка</option>
+                <option value="🎭">Искусство</option>
+                <option value="🛒">Шоппинг</option>
+                <option value="🐱">Квадроберство</option>
+            </select>
+            <input type="number"id="age" value="1" min="1" max="120" placeholder="Возраст">
+            <button class="btn">Сгенерировать</button>
+        </div>
+        <div class="container">
+            <div class="res">
+                <p class="resultPass"></p>
+            </div>
+            <div class="item">
+                <label for="length">Длина: <span class="length">8</span></label>
+                <input type="range" name="range" id="range" min="0" max="16" step="1">
+            </div>
+            <div class="item">
+                <p>Верхний регистр</p>
+                <label for="upper" class="switch">
+                    <input type="checkbox"  name="upper" id="upper">
+                    <span class="switch round"></span>
+                </label>
+            </div>
+            <div class="item">
+                <p>Нижний регистр</p>
+                <label for="lower" class="switch">
+                    <input type="checkbox" class="switch" name="lower" id="lower">
+                <span class="switch round"></span>
+                </label>
+            </div>
+            <div class="item">
+                <p>Цифры</p>
+                <label for="digital" class="switch">
+                    <input type="checkbox" class="switch" name="digital" id="digital">
+                <span class="switch round"></span>
+                </label>
+            </div>
+            <div class="item">
+                <p>Символы</p>
+                <label for="special" class="switch">
+                    <input type="checkbox" class="switch" name="special" id="special">
+                    <span class="switch round"></span>
+                </label>
+            </div>
+            <button class="btnPass">Сгенерировать</button>
+        </div>
+    </main>
+    <script src="js/srctipt.js"></script>
+</body>
+</html>
